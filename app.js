@@ -1,10 +1,11 @@
 import express from 'express';
-
+import connectToDB from './database/mongodb.js';
 import { PORT } from './config/env.js';
 
 import userRouter from './routes/user.routes.js';
 import authRouter from './routes/auth.routes.js';
 import subscriptionRouter from './routes/subscription.routes.js';
+
 
 const app = express();
 
@@ -21,8 +22,7 @@ app.listen(PORT, () => {
   console.log(
     `Subscription Tracker API is running on http://localhost:${PORT}`
   );
+  connectToDB();
 });
 
 export default app;
-// 55.17
-// .env.development.local port=5500

@@ -1,3 +1,6 @@
+https://www.youtube.com/watch?v=rOpEN1JDaD0
+1:16:02
+
 ### Tools used
 
 Upstash -> Workflows, scheduling, emails, subscription reminders
